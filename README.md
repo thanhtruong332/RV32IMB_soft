@@ -16,6 +16,7 @@ Pure-software AES-128 profiling package for the `RV32IMB` core. The AES hardware
 - `firmware/src/`: AES source, startup code, linker script and portable build script.
 - `firmware/images/`: the 12 memory images used by the testbenches.
 - `sim/`: self-checking Vivado/XSim testbenches for every mode and payload.
+- [`TEST_MATRIX.md`](TEST_MATRIX.md): exact mapping of all 12 testbenches to firmware images.
 - `scripts/create_project.tcl`: creates a portable Vivado project.
 - `scripts/run_smoke.tcl`: runs the 16 B ECB self-checking smoke test.
 
