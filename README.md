@@ -18,7 +18,8 @@ Pure-software AES-128 profiling package for the `RV32IMB` core. The AES hardware
 - `sim/`: self-checking Vivado/XSim testbenches for every mode and payload.
 - [`TEST_MATRIX.md`](TEST_MATRIX.md): exact mapping of all 12 testbenches to firmware images.
 - `scripts/create_project.tcl`: creates a portable Vivado project.
-- `scripts/run_smoke.tcl`: runs the 16 B ECB self-checking smoke test.
+- `scripts/run_test.tcl`: runs any selected self-checking condition.
+- `scripts/run_all_tests.ps1`: runs all 12 conditions.
 
 ## Recreate and test
 
@@ -26,10 +27,11 @@ Requirements: Vivado 2024.2 with device support for `xc7z020clg484-2`.
 
 ```powershell
 vivado -mode batch -source scripts/create_project.tcl
-vivado -mode batch -source scripts/run_smoke.tcl
+vivado -mode batch -source scripts/run_test.tcl -tclargs CFB_256B
+powershell -ExecutionPolicy Bypass -File scripts/run_all_tests.ps1 -Vivado vivado
 ```
 
-A passing smoke run prints `RESULT=PASS`. To run another condition, set the `sim_1` top to the corresponding module in `sim/`.
+A passing condition prints `RESULT=PASS`. Valid condition names are listed in [`TEST_MATRIX.md`](TEST_MATRIX.md).
 
 Architecture, memory-model and compiler metadata are listed in [`docs/REPRODUCIBILITY.md`](docs/REPRODUCIBILITY.md).
 
