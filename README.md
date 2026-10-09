@@ -41,6 +41,10 @@ To rebuild firmware, install a `riscv-none-elf` GCC toolchain and PyCryptodome, 
 python firmware/src/build_payload_scaling.py
 ```
 
+## Evidence package
+
+The reviewer-facing [`reproducibility/`](reproducibility/) directory records tool versions, raw evidence and SHA-256 hashes for release `v1.2.0`.
+
 ## License
 
 See `LICENSE_STATUS.md`.

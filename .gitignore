@@ -19,3 +19,7 @@ __pycache__/
 *.pyc
 
 ipshared/
+
+# Curated reproducibility evidence
+!reproducibility/
+!reproducibility/**

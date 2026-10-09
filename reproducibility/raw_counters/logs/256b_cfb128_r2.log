@@ -1,0 +1,54 @@
+#-----------------------------------------------------------
+# xsim v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Tue Oct  6 21:23:56 2026
+# Process ID         : 7912
+# Current directory  : F:/advance_topic/UTE-PAPER/Experiment_G/payload_scaling/runs/RV32IMB
+# Command line       : xsim.exe -log 256b_cfb128_r2.log -mode tcl -source {xsim.dir/snap_scale_rv32imb_256b_cfb128/xsim_script.tcl}
+# Log file           : F:/advance_topic/UTE-PAPER/Experiment_G/payload_scaling/runs/RV32IMB/256b_cfb128_r2.log
+# Journal file       : F:/advance_topic/UTE-PAPER/Experiment_G/payload_scaling/runs/RV32IMB\xsim.jou
+# Running On         : thanhtruong
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 5 5600H with Radeon Graphics         
+# CPU Frequency      : 3294 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 16487 MB
+# Swap memory        : 11811 MB
+# Total Virtual      : 28299 MB
+# Available Virtual  : 15455 MB
+#-----------------------------------------------------------
+source xsim.dir/snap_scale_rv32imb_256b_cfb128/xsim_script.tcl
+# xsim {snap_scale_rv32imb_256b_cfb128} -testplusarg REPEAT=2 -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+[EXP_G] CORE=RV32IMB MODE=CFB128 REPEAT=2 PAYLOAD_BYTES=256 BLOCKS=16
+[EXP_G] START=25 STOP=128412 RAW_CYCLES=128387 CYCLES_PER_BLOCK=8024.187500
+[EXP_G] RETIRED=103673 CPI=1.238384 ALU=55843 LOAD=20184 STORE=14682 BRANCH=12614 JUMP=350 M=0 B=0
+[EXP_G] TAKEN_BRANCH=10646 BRANCH_PENALTY_CYCLES=21292
+[EXP_G] TOTAL_STALLS=24713 CONTROL_STALLS=21992 LOAD_USE_STALLS=2721 MEMORY_STALLS=0 OTHER_STALLS=0
+[EXP_G] COUNTER_ERRORS=0 COUNTER_CHECK=PASS
+[EXP_G] FW_ERRORS=0 TB_ERRORS=0 STATUS=50415353 RESULT=PASS
+[EXP_G] BLOCKS_CHECKED=16 BYTES_CHECKED=256
+[EXP_G_BLOCK] BLOCK=1 OBSERVED=3b3fd92eb72dad20333449f8e83cfb4a EXPECTED=3b3fd92eb72dad20333449f8e83cfb4a
+[EXP_G_BLOCK] BLOCK=2 OBSERVED=c8a64537a0b3a93fcde3cdad9f1ce58b EXPECTED=c8a64537a0b3a93fcde3cdad9f1ce58b
+[EXP_G_BLOCK] BLOCK=3 OBSERVED=26751f67a3cbb140b1808cf187a4f4df EXPECTED=26751f67a3cbb140b1808cf187a4f4df
+[EXP_G_BLOCK] BLOCK=4 OBSERVED=c04b05357c5d1c0eeac4c66f9ff7f2e6 EXPECTED=c04b05357c5d1c0eeac4c66f9ff7f2e6
+[EXP_G_BLOCK] BLOCK=5 OBSERVED=cd548e3f4f3e194fea98e69a9d86b434 EXPECTED=cd548e3f4f3e194fea98e69a9d86b434
+[EXP_G_BLOCK] BLOCK=6 OBSERVED=5a2dfc4120fa1853c5c5270dbcf115e4 EXPECTED=5a2dfc4120fa1853c5c5270dbcf115e4
+[EXP_G_BLOCK] BLOCK=7 OBSERVED=465a3d6e55e7cdb849ef4e7d11d68135 EXPECTED=465a3d6e55e7cdb849ef4e7d11d68135
+[EXP_G_BLOCK] BLOCK=8 OBSERVED=f91e1f933be36e88fe321af98837c393 EXPECTED=f91e1f933be36e88fe321af98837c393
+[EXP_G_BLOCK] BLOCK=9 OBSERVED=eb336ce90ab596aa3b01d54233b63e9f EXPECTED=eb336ce90ab596aa3b01d54233b63e9f
+[EXP_G_BLOCK] BLOCK=10 OBSERVED=c09b4a7335d3bd03d1681bbdadbd21c7 EXPECTED=c09b4a7335d3bd03d1681bbdadbd21c7
+[EXP_G_BLOCK] BLOCK=11 OBSERVED=904d15878308040770e5120d2547eafe EXPECTED=904d15878308040770e5120d2547eafe
+[EXP_G_BLOCK] BLOCK=12 OBSERVED=19cfbac02df5134ccf8f7df50e4d0ee6 EXPECTED=19cfbac02df5134ccf8f7df50e4d0ee6
+[EXP_G_BLOCK] BLOCK=13 OBSERVED=0bfe3c7afdf2945153152eda8670a82d EXPECTED=0bfe3c7afdf2945153152eda8670a82d
+[EXP_G_BLOCK] BLOCK=14 OBSERVED=c1bab2c1296d9a5f5ac0d605618ffb26 EXPECTED=c1bab2c1296d9a5f5ac0d605618ffb26
+[EXP_G_BLOCK] BLOCK=15 OBSERVED=f517d0d8c9e9a04d437e9bb3112b53d7 EXPECTED=f517d0d8c9e9a04d437e9bb3112b53d7
+[EXP_G_BLOCK] BLOCK=16 OBSERVED=467c069a44912b8f537f3058a725f02c EXPECTED=467c069a44912b8f537f3058a725f02c
+$finish called at time : 3332737500 ps : File "F:/advance_topic/UTE-PAPER/Experiment_G/payload_scaling/generated/RV32IMB/tb_expG_scale_rv32imb_256b_cfb128.v" Line 261
+exit
+INFO: [Common 17-206] Exiting xsim at Tue Oct  6 21:23:59 2026...

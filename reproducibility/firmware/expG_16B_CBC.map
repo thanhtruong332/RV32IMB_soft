@@ -1,0 +1,79 @@
+
+Discarded input sections
+
+ .text          0x00000000        0x0 C:\Users\GIGABYTE\AppData\Local\Temp\ccOJdUjl.o
+ .data          0x00000000        0x0 C:\Users\GIGABYTE\AppData\Local\Temp\ccOJdUjl.o
+ .bss           0x00000000        0x0 C:\Users\GIGABYTE\AppData\Local\Temp\ccOJdUjl.o
+ .text          0x00000000        0x0 C:\Users\GIGABYTE\AppData\Local\Temp\ccnwhhIA.o
+ .data          0x00000000        0x0 C:\Users\GIGABYTE\AppData\Local\Temp\ccnwhhIA.o
+ .bss           0x00000000        0x0 C:\Users\GIGABYTE\AppData\Local\Temp\ccnwhhIA.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+RAM              0x00000000         0x0000e000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD C:\Users\GIGABYTE\AppData\Local\Temp\ccOJdUjl.o
+LOAD C:\Users\GIGABYTE\AppData\Local\Temp\ccnwhhIA.o
+                0x00000000                        . = ORIGIN (RAM)
+
+.text           0x00000000      0x634
+ *(.init)
+ .init          0x00000000       0x10 C:\Users\GIGABYTE\AppData\Local\Temp\ccOJdUjl.o
+                0x00000000                _start
+ *(.text .text.*)
+ .text.shift_rows
+                0x00000010       0xa8 C:\Users\GIGABYTE\AppData\Local\Temp\ccnwhhIA.o
+ .text.startup.main
+                0x000000b8      0x57c C:\Users\GIGABYTE\AppData\Local\Temp\ccnwhhIA.o
+                0x000000b8                main
+
+.rodata         0x00000634      0x5ac
+ *(.rodata .rodata.*)
+ .rodata.iv     0x00000634       0x40 C:\Users\GIGABYTE\AppData\Local\Temp\ccnwhhIA.o
+ .rodata.plaintext_seed
+                0x00000674      0x100 C:\Users\GIGABYTE\AppData\Local\Temp\ccnwhhIA.o
+ .rodata.key    0x00000774       0x40 C:\Users\GIGABYTE\AppData\Local\Temp\ccnwhhIA.o
+ .rodata.rcon   0x000007b4       0x2c C:\Users\GIGABYTE\AppData\Local\Temp\ccnwhhIA.o
+ .rodata.sbox   0x000007e0      0x400 C:\Users\GIGABYTE\AppData\Local\Temp\ccnwhhIA.o
+
+.rela.dyn       0x00000be0        0x0
+ .rela.init     0x00000be0        0x0 C:\Users\GIGABYTE\AppData\Local\Temp\ccOJdUjl.o
+
+.data
+ *(.data .data.*)
+
+.bss            0x00000be0       0x44
+                0x00000be0                        __bss_start = .
+ *(.bss .bss.* COMMON)
+ .bss.exp_g_errors
+                0x00000be0        0x4 C:\Users\GIGABYTE\AppData\Local\Temp\ccnwhhIA.o
+                0x00000be0                exp_g_errors
+ .bss.exp_g_output
+                0x00000be4       0x40 C:\Users\GIGABYTE\AppData\Local\Temp\ccnwhhIA.o
+                0x00000be4                exp_g_output
+                0x00000c24                        __bss_end = .
+                0x00000c30                        . = ALIGN (0x10)
+                0x00000c30                        _end = .
+                0x0000e000                        _stack_top = (ORIGIN (RAM) + LENGTH (RAM))
+                0x00000001                        ASSERT ((_end < 0xd000), Experiment G image overlaps the reserved stack area)
+OUTPUT(F:\advance_topic\UTE-PAPER\Experiment_G\payload_scaling\build\expG_16B_CBC.elf elf32-littleriscv)
+
+.riscv.attributes
+                0x00000000       0x1c
+ .riscv.attributes
+                0x00000000       0x1a C:\Users\GIGABYTE\AppData\Local\Temp\ccOJdUjl.o
+ .riscv.attributes
+                0x0000001a       0x1c C:\Users\GIGABYTE\AppData\Local\Temp\ccnwhhIA.o
+
+.comment        0x00000000       0x33
+ .comment       0x00000000       0x33 C:\Users\GIGABYTE\AppData\Local\Temp\ccnwhhIA.o
+                                 0x34 (size before relaxing)
+
+.note.GNU-stack
+                0x00000000        0x0
+ .note.GNU-stack
+                0x00000000        0x0 C:\Users\GIGABYTE\AppData\Local\Temp\ccnwhhIA.o

@@ -1,0 +1,53 @@
+{
+  "generated_at": "2026-10-06T21:28:41.694907+07:00",
+  "compiler": "riscv-none-elf-gcc.exe (xPack GNU RISC-V Embedded GCC x86_64) 15.2.0",
+  "flags": [
+    "-O2",
+    "-march=rv32i",
+    "-mabi=ilp32",
+    "-mcmodel=medlow",
+    "-msmall-data-limit=0",
+    "-ffreestanding",
+    "-fno-builtin",
+    "-fno-pic",
+    "-fno-pie",
+    "-fno-stack-protector",
+    "-ffunction-sections",
+    "-fdata-sections",
+    "-Wall",
+    "-Wextra"
+  ],
+  "march": "rv32i",
+  "mabi": "ilp32",
+  "clock_hz": 40000000,
+  "payloads": {
+    "16B": [
+      16,
+      1
+    ],
+    "256B": [
+      256,
+      16
+    ],
+    "4KiB": [
+      4096,
+      256
+    ]
+  },
+  "cores": [
+    "RISSP",
+    "RV32I",
+    "RV32IMB"
+  ],
+  "modes": [
+    "ECB",
+    "CBC",
+    "CFB128",
+    "CTR"
+  ],
+  "repeats": 3,
+  "memory_model": "64 KiB unified zero-wait-state simulation RAM; each AES logical byte stored in one u32",
+  "accelerator": "none; pure software AES-128",
+  "plaintext_generation": "four NIST blocks for indices 0..3; later four-block groups XOR group index",
+  "expected_reference": "PyCryptodome AES independently generates every expected ciphertext byte"
+}

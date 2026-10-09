@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "repository": "https://github.com/thanhtruong332/RV32IMB_soft",
+  "release_tag": "v1.2.0",
+  "commit_resolution": "git rev-parse v1.2.0^{commit}",
+  "scope": "pure-software AES-128 microarchitectural profiling",
+  "core": "RV32IMB",
+  "rtl_origin": "custom RTL",
+  "vivado_xsim": "2024.2 build 5239630",
+  "compiler": "xPack GNU RISC-V Embedded GCC 15.2.0",
+  "compiler_target": "-O2 -march=rv32i -mabi=ilp32",
+  "device": "xc7z020clg484-2",
+  "clock_hz": 40000000,
+  "raw_runs": 36,
+  "summary_conditions": 12,
+  "payloads": [
+    "16B",
+    "256B",
+    "4KiB"
+  ],
+  "modes": [
+    "ECB",
+    "CBC",
+    "CFB-128",
+    "CTR"
+  ],
+  "activity_power_reports": "not applicable; Experiment G is a behavioral performance profile",
+  "xdc": "not applicable to the behavioral Experiment G project",
+  "seed_scripts": "not applicable to behavioral simulation",
+  "license": "no open-source license declared; see LICENSE_STATUS.md"
+}
