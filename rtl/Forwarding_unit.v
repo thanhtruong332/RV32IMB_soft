@@ -1,4 +1,4 @@
-module Forwarding_unit(
+module Forwarding_unit (
     input [4:0] ID_EX_rs1,
     input [4:0] ID_EX_rs2,
 
@@ -15,20 +15,20 @@ module Forwarding_unit(
     always @(*) begin
         ForwardA    = 2'b00;
         ForwardB    = 2'b00;
-        if(EX_MEM_RegWrite && EX_MEM_rd!=0 && EX_MEM_rd==ID_EX_rs1) begin
+        if (EX_MEM_RegWrite && EX_MEM_rd!=0 && EX_MEM_rd==ID_EX_rs1) begin
             ForwardA    = 2'b10;
         end
-        else if(MEM_WB_RegWrite && MEM_WB_rd!=0 && MEM_WB_rd==ID_EX_rs1) begin
+        else if (MEM_WB_RegWrite && MEM_WB_rd!=0 && MEM_WB_rd==ID_EX_rs1) begin
             ForwardA    = 2'b01;
         end
         else begin
             ForwardA    = 2'b00;
         end
 
-        if(EX_MEM_RegWrite && EX_MEM_rd!=0 && EX_MEM_rd==ID_EX_rs2) begin
+        if (EX_MEM_RegWrite && EX_MEM_rd!=0 && EX_MEM_rd==ID_EX_rs2) begin
             ForwardB    = 2'b10;
         end
-        else if(MEM_WB_RegWrite && MEM_WB_rd!=0 && MEM_WB_rd==ID_EX_rs2) begin
+        else if (MEM_WB_RegWrite && MEM_WB_rd!=0 && MEM_WB_rd==ID_EX_rs2) begin
             ForwardB    = 2'b01;
         end
         else begin

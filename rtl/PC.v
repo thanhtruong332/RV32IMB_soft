@@ -1,4 +1,4 @@
-module PC(
+module PC (
     input   wire            clk,
     input   wire            rst_n,
     input   wire            Stall,
@@ -24,10 +24,10 @@ module PC(
     assign  branch_target   = pc_of_instruction + offset;
     assign  jalr_target     = (rs1_data + offset) & ~32'd1;
 
-    always @(*) begin   
-        if (Jump && Pcsrc)            
+    always @(*) begin
+        if (Jump && Pcsrc)
             next_pc = jalr_target;
-        else if (Jump)                 
+        else if (Jump)
             next_pc = branch_target;
         else if (Branch && Branch_taken)
             next_pc = branch_target;
@@ -36,9 +36,9 @@ module PC(
     end
 
     always @(posedge clk or negedge rst_n) begin
-        if(!rst_n)
+        if (!rst_n)
             pc_reg <= 32'h0;
-        else if(~Stall)
+        else if (~Stall)
             pc_reg <= next_pc;
     end
 

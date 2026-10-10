@@ -1,12 +1,12 @@
-module Branch_prediction(
+module Branch_prediction (
     input   wire    [2:0]   funct3,
     input   wire    [31:0]  ALU_result,
     input   wire            ZERO,
 
     output  reg             Branch_taken
 );
-    always @(*) begin   
-        case(funct3)
+    always @(*) begin
+        case (funct3)
             3'b000: Branch_taken    = ALU_result[0]; // BEQ (==)
             3'b001: Branch_taken    = ALU_result[0]; // BNE (!=)
             3'b100: Branch_taken    = ALU_result[0]; // BLT (<)
@@ -15,6 +15,6 @@ module Branch_prediction(
             3'b111: Branch_taken    = ALU_result[0]; // BGEU (>= unsigned)
             default: Branch_taken   = 0;
         endcase
-    end 
+    end
 
 endmodule

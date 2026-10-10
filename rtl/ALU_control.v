@@ -1,4 +1,4 @@
-module ALU_control(
+module ALU_control (
     input   wire    [2:0]   ALUOp,
     input   wire    [2:0]   funct3,
     input   wire    [6:0]   funct7,
@@ -7,7 +7,7 @@ module ALU_control(
 );
 
     always @(*) begin
-        casez({ALUOp, funct7[5], funct3})
+        casez ({ALUOp, funct7[5], funct3})
             {3'b010, 1'b?, 3'b???}, {3'b111, 1'b?, 3'b???}, {3'b100, 1'b?, 3'b???}, {3'b000, 1'b0, 3'b000}, {3'b001, 1'b?, 3'b000}, {3'b110, 1'b?, 3'b???}: ALU_control = 4'b0000;
             {3'b000, 1'b1, 3'b000}: ALU_control = 4'b0001;
             {3'b011, 1'b?, 3'b100}, {3'b001, 1'b?, 3'b010}, {3'b000, 1'b0, 3'b010}: ALU_control = 4'b0010;
