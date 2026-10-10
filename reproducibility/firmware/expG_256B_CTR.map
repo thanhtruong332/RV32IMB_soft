@@ -1,12 +1,12 @@
 
 Discarded input sections
 
- .text          0x00000000        0x0 C:\Users\GIGABYTE\AppData\Local\Temp\ccEjpKGG.o
- .data          0x00000000        0x0 C:\Users\GIGABYTE\AppData\Local\Temp\ccEjpKGG.o
- .bss           0x00000000        0x0 C:\Users\GIGABYTE\AppData\Local\Temp\ccEjpKGG.o
- .text          0x00000000        0x0 C:\Users\GIGABYTE\AppData\Local\Temp\ccKKaquz.o
- .data          0x00000000        0x0 C:\Users\GIGABYTE\AppData\Local\Temp\ccKKaquz.o
- .bss           0x00000000        0x0 C:\Users\GIGABYTE\AppData\Local\Temp\ccKKaquz.o
+ .text          0x00000000        0x0 C:\Users\GIGABYTE\AppData\Local\Temp\cc4PqMsR.o
+ .data          0x00000000        0x0 C:\Users\GIGABYTE\AppData\Local\Temp\cc4PqMsR.o
+ .bss           0x00000000        0x0 C:\Users\GIGABYTE\AppData\Local\Temp\cc4PqMsR.o
+ .text          0x00000000        0x0 C:\Users\GIGABYTE\AppData\Local\Temp\ccZJNjhk.o
+ .data          0x00000000        0x0 C:\Users\GIGABYTE\AppData\Local\Temp\ccZJNjhk.o
+ .bss           0x00000000        0x0 C:\Users\GIGABYTE\AppData\Local\Temp\ccZJNjhk.o
 
 Memory Configuration
 
@@ -16,47 +16,47 @@ RAM              0x00000000         0x0000e000         xrw
 
 Linker script and memory map
 
-LOAD C:\Users\GIGABYTE\AppData\Local\Temp\ccEjpKGG.o
-LOAD C:\Users\GIGABYTE\AppData\Local\Temp\ccKKaquz.o
+LOAD C:\Users\GIGABYTE\AppData\Local\Temp\cc4PqMsR.o
+LOAD C:\Users\GIGABYTE\AppData\Local\Temp\ccZJNjhk.o
                 0x00000000                        . = ORIGIN (RAM)
 
-.text           0x00000000      0x6a8
+.text           0x00000000      0x6a4
  *(.init)
- .init          0x00000000       0x10 C:\Users\GIGABYTE\AppData\Local\Temp\ccEjpKGG.o
+ .init          0x00000000       0x10 C:\Users\GIGABYTE\AppData\Local\Temp\cc4PqMsR.o
                 0x00000000                _start
  *(.text .text.*)
  .text.shift_rows
-                0x00000010       0xa8 C:\Users\GIGABYTE\AppData\Local\Temp\ccKKaquz.o
+                0x00000010       0xa8 C:\Users\GIGABYTE\AppData\Local\Temp\ccZJNjhk.o
  .text.startup.main
-                0x000000b8      0x5f0 C:\Users\GIGABYTE\AppData\Local\Temp\ccKKaquz.o
+                0x000000b8      0x5ec C:\Users\GIGABYTE\AppData\Local\Temp\ccZJNjhk.o
                 0x000000b8                main
 
-.rodata         0x000006a8      0x5ac
+.rodata         0x000006a4      0x5ac
  *(.rodata .rodata.*)
  .rodata.initial_counter
-                0x000006a8       0x40 C:\Users\GIGABYTE\AppData\Local\Temp\ccKKaquz.o
+                0x000006a4       0x40 C:\Users\GIGABYTE\AppData\Local\Temp\ccZJNjhk.o
  .rodata.plaintext_seed
-                0x000006e8      0x100 C:\Users\GIGABYTE\AppData\Local\Temp\ccKKaquz.o
- .rodata.key    0x000007e8       0x40 C:\Users\GIGABYTE\AppData\Local\Temp\ccKKaquz.o
- .rodata.rcon   0x00000828       0x2c C:\Users\GIGABYTE\AppData\Local\Temp\ccKKaquz.o
- .rodata.sbox   0x00000854      0x400 C:\Users\GIGABYTE\AppData\Local\Temp\ccKKaquz.o
+                0x000006e4      0x100 C:\Users\GIGABYTE\AppData\Local\Temp\ccZJNjhk.o
+ .rodata.key    0x000007e4       0x40 C:\Users\GIGABYTE\AppData\Local\Temp\ccZJNjhk.o
+ .rodata.rcon   0x00000824       0x2c C:\Users\GIGABYTE\AppData\Local\Temp\ccZJNjhk.o
+ .rodata.sbox   0x00000850      0x400 C:\Users\GIGABYTE\AppData\Local\Temp\ccZJNjhk.o
 
-.rela.dyn       0x00000c54        0x0
- .rela.init     0x00000c54        0x0 C:\Users\GIGABYTE\AppData\Local\Temp\ccEjpKGG.o
+.rela.dyn       0x00000c50        0x0
+ .rela.init     0x00000c50        0x0 C:\Users\GIGABYTE\AppData\Local\Temp\cc4PqMsR.o
 
 .data
  *(.data .data.*)
 
-.bss            0x00000c54      0x404
-                0x00000c54                        __bss_start = .
+.bss            0x00000c50      0x404
+                0x00000c50                        __bss_start = .
  *(.bss .bss.* COMMON)
  .bss.exp_g_errors
-                0x00000c54        0x4 C:\Users\GIGABYTE\AppData\Local\Temp\ccKKaquz.o
-                0x00000c54                exp_g_errors
+                0x00000c50        0x4 C:\Users\GIGABYTE\AppData\Local\Temp\ccZJNjhk.o
+                0x00000c50                exp_g_errors
  .bss.exp_g_output
-                0x00000c58      0x400 C:\Users\GIGABYTE\AppData\Local\Temp\ccKKaquz.o
-                0x00000c58                exp_g_output
-                0x00001058                        __bss_end = .
+                0x00000c54      0x400 C:\Users\GIGABYTE\AppData\Local\Temp\ccZJNjhk.o
+                0x00000c54                exp_g_output
+                0x00001054                        __bss_end = .
                 0x00001060                        . = ALIGN (0x10)
                 0x00001060                        _end = .
                 0x0000e000                        _stack_top = (ORIGIN (RAM) + LENGTH (RAM))
@@ -66,15 +66,15 @@ OUTPUT(F:\advance_topic\UTE-PAPER\Experiment_G\payload_scaling\build\expG_256B_C
 .riscv.attributes
                 0x00000000       0x1c
  .riscv.attributes
-                0x00000000       0x1a C:\Users\GIGABYTE\AppData\Local\Temp\ccEjpKGG.o
+                0x00000000       0x1a C:\Users\GIGABYTE\AppData\Local\Temp\cc4PqMsR.o
  .riscv.attributes
-                0x0000001a       0x1c C:\Users\GIGABYTE\AppData\Local\Temp\ccKKaquz.o
+                0x0000001a       0x1c C:\Users\GIGABYTE\AppData\Local\Temp\ccZJNjhk.o
 
 .comment        0x00000000       0x33
- .comment       0x00000000       0x33 C:\Users\GIGABYTE\AppData\Local\Temp\ccKKaquz.o
+ .comment       0x00000000       0x33 C:\Users\GIGABYTE\AppData\Local\Temp\ccZJNjhk.o
                                  0x34 (size before relaxing)
 
 .note.GNU-stack
                 0x00000000        0x0
  .note.GNU-stack
-                0x00000000        0x0 C:\Users\GIGABYTE\AppData\Local\Temp\ccKKaquz.o
+                0x00000000        0x0 C:\Users\GIGABYTE\AppData\Local\Temp\ccZJNjhk.o

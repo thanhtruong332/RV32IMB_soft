@@ -25,7 +25,7 @@
         "elf": "reproducibility/firmware/expG_16B_ECB.elf",
         "map": "reproducibility/firmware/expG_16B_ECB.map",
         "memory_image": "firmware/images/expG_16B_ECB.mem",
-        "sha256_mem": "00FD9BD0ACE6E6182036BCFB384AF836079F50361371C71E7CB2C62E7C9F1CDE",
+        "sha256_mem": "11EFDD8F568F48EA84223F62078F2D6786DFBEB52494065C0A087EF152D6B2A0",
         "sha256_expected": "8AF19F2653A191B6D1E106AF56374613E695AA0F2AAB2B039093B21BAF4F8AFB",
         "expected_fnv1a": "0xB7A5ED55",
         "sections": {
@@ -41,7 +41,7 @@
         "elf": "reproducibility/firmware/expG_16B_CBC.elf",
         "map": "reproducibility/firmware/expG_16B_CBC.map",
         "memory_image": "firmware/images/expG_16B_CBC.mem",
-        "sha256_mem": "B94B52076C2BB1BFDBAC62F7A1B7C15DB0BE7596D9B6C0C86B509CD929A477B9",
+        "sha256_mem": "3A62C6AA85348F739D92669926C47E379749F90D4E5A3383C0562798659C5766",
         "sha256_expected": "6CACF7836652AE5C2CFF8F4FB4E82BF9F08D3C3774F6D4EE91A3F0CBE8B5E75C",
         "expected_fnv1a": "0x9E5165D8",
         "sections": {
@@ -57,7 +57,7 @@
         "elf": "reproducibility/firmware/expG_16B_CFB128.elf",
         "map": "reproducibility/firmware/expG_16B_CFB128.map",
         "memory_image": "firmware/images/expG_16B_CFB128.mem",
-        "sha256_mem": "29F7114F1CE296A278B309183CEF34B51A421F2B7A28BF2333512090D48075DE",
+        "sha256_mem": "896C46691038F2AD233805FD047485F701EFB80F91658C658DDF7D12F490CB37",
         "sha256_expected": "9145A59239886E0E599FDD7E024A07EEA21B46965557EDFF287D18E3D311B3AD",
         "expected_fnv1a": "0x90D325A6",
         "sections": {
@@ -73,7 +73,7 @@
         "elf": "reproducibility/firmware/expG_16B_CTR.elf",
         "map": "reproducibility/firmware/expG_16B_CTR.map",
         "memory_image": "firmware/images/expG_16B_CTR.mem",
-        "sha256_mem": "90404EB96194E10CFEDE668F871426751C920A9E2D0250339C6992F01850120C",
+        "sha256_mem": "6BCDBE91F8D16F5236A7E18087882A1771937D1B349A482781702421F52390C0",
         "sha256_expected": "B7A95159B29EB0C70F73D022B15825FCCF685062F7650B8F63DCFFD4FFA957F3",
         "expected_fnv1a": "0x5947C420",
         "sections": {
@@ -91,64 +91,64 @@
         "elf": "reproducibility/firmware/expG_256B_ECB.elf",
         "map": "reproducibility/firmware/expG_256B_ECB.map",
         "memory_image": "firmware/images/expG_256B_ECB.mem",
-        "sha256_mem": "54CF002C6E18F034B8F789BE39EEEE3BE7A5BF19CA6EEDEB96253C3484FC407D",
+        "sha256_mem": "58E7F2B73DBF9160677B4E2504AF8CA2E4805907EA236E6A3745FDEDE5A4F701",
         "sha256_expected": "9EA70128DAB316DE720BB4030156501C8C18FFBAB556C1FF6D30B4CE9A1268A3",
         "expected_fnv1a": "0x71CD77BD",
         "sections": {
-          "text": 1524,
+          "text": 1520,
           "rodata": 1388,
           "data": 0,
           "bss": 1028,
-          "total_load_image": 2912,
-          "total_memory": 3940
+          "total_load_image": 2908,
+          "total_memory": 3936
         }
       },
       "CBC": {
         "elf": "reproducibility/firmware/expG_256B_CBC.elf",
         "map": "reproducibility/firmware/expG_256B_CBC.map",
         "memory_image": "firmware/images/expG_256B_CBC.mem",
-        "sha256_mem": "F0C447DD89B241ECA303B69875F33C4F192BA2F1FE6BD76F1E0E604017CC043A",
+        "sha256_mem": "7343C7A7EA0A8C4BC85E06B5D721D2BF51D82574B43BAD37209B2D3A84BFE94E",
         "sha256_expected": "D2B2C0FE7457E2F760F483B1F69A93CC8756509A3CB917DC95023FC0ED88A1E5",
         "expected_fnv1a": "0x9919BD27",
         "sections": {
-          "text": 1624,
+          "text": 1620,
           "rodata": 1452,
           "data": 0,
           "bss": 1028,
-          "total_load_image": 3076,
-          "total_memory": 4104
+          "total_load_image": 3072,
+          "total_memory": 4100
         }
       },
       "CFB128": {
         "elf": "reproducibility/firmware/expG_256B_CFB128.elf",
         "map": "reproducibility/firmware/expG_256B_CFB128.map",
         "memory_image": "firmware/images/expG_256B_CFB128.mem",
-        "sha256_mem": "3E6110431F09DF3D4BE57A64490EB7FB27E90A36F2D358EAFBBF527DDA654A9E",
+        "sha256_mem": "29DF7253ED214C532897549FFF9842CDD4A6CDC07B55DF2A9EF53BB6361B8FAE",
         "sha256_expected": "A59DDE1D5F35A0E30C2DB99209A20DED0E09192CAC9FB4053D803FDD3BB99CD4",
         "expected_fnv1a": "0x54561564",
         "sections": {
-          "text": 1676,
+          "text": 1672,
           "rodata": 1452,
           "data": 0,
           "bss": 1028,
-          "total_load_image": 3128,
-          "total_memory": 4156
+          "total_load_image": 3124,
+          "total_memory": 4152
         }
       },
       "CTR": {
         "elf": "reproducibility/firmware/expG_256B_CTR.elf",
         "map": "reproducibility/firmware/expG_256B_CTR.map",
         "memory_image": "firmware/images/expG_256B_CTR.mem",
-        "sha256_mem": "DA7CCB40C61267551A217BF0B77770E22CB973D1BE75B59E61A64D8D5738CB48",
+        "sha256_mem": "ADB8DF4C81CE755833B14FCCD4632111585B98FC05A67557D28167DD9FD92DFE",
         "sha256_expected": "9421390973C0084B737ECA2CE4227C444855F439F8EA089A3A77BBC709E21F83",
         "expected_fnv1a": "0x676EC6CB",
         "sections": {
-          "text": 1704,
+          "text": 1700,
           "rodata": 1452,
           "data": 0,
           "bss": 1028,
-          "total_load_image": 3156,
-          "total_memory": 4184
+          "total_load_image": 3152,
+          "total_memory": 4180
         }
       }
     },
@@ -157,64 +157,64 @@
         "elf": "reproducibility/firmware/expG_4KiB_ECB.elf",
         "map": "reproducibility/firmware/expG_4KiB_ECB.map",
         "memory_image": "firmware/images/expG_4KiB_ECB.mem",
-        "sha256_mem": "A8865883C6E9F459246554C809B78896FA707D2DF32140D2412D4FA9562F6862",
+        "sha256_mem": "57255109A91A4C3A7D1556EC9BD92D544EDFF6ADDA7EBE363C53E1AD04C1F267",
         "sha256_expected": "466B518E81D3736A4E84B89F66DA6F0E55E530EDFAD9B6082A67AA5BD2E56917",
         "expected_fnv1a": "0xA23A6046",
         "sections": {
-          "text": 1520,
+          "text": 1516,
           "rodata": 1388,
           "data": 0,
           "bss": 16388,
-          "total_load_image": 2908,
-          "total_memory": 19296
+          "total_load_image": 2904,
+          "total_memory": 19292
         }
       },
       "CBC": {
         "elf": "reproducibility/firmware/expG_4KiB_CBC.elf",
         "map": "reproducibility/firmware/expG_4KiB_CBC.map",
         "memory_image": "firmware/images/expG_4KiB_CBC.mem",
-        "sha256_mem": "0CF5F6A1249A6582F2F282FEA28814F11718ECE872A92B6D31262F28AEEB3E61",
+        "sha256_mem": "A72C87AFE14B456CF0168E0565E47CBAACA2E2B6FECFA650E64A3031D3CB9406",
         "sha256_expected": "7C1C09C60D2DEF659718823804B596AFE05E624139F1597A89CFB06C52A87E75",
         "expected_fnv1a": "0xF2B874C1",
         "sections": {
-          "text": 1620,
+          "text": 1612,
           "rodata": 1452,
           "data": 0,
           "bss": 16388,
-          "total_load_image": 3072,
-          "total_memory": 19460
+          "total_load_image": 3064,
+          "total_memory": 19452
         }
       },
       "CFB128": {
         "elf": "reproducibility/firmware/expG_4KiB_CFB128.elf",
         "map": "reproducibility/firmware/expG_4KiB_CFB128.map",
         "memory_image": "firmware/images/expG_4KiB_CFB128.mem",
-        "sha256_mem": "22CBF266B7AA622C6A6B4BB2A8D828E30EA9CE80BE372A3CAFF86AFCA80D8BA3",
+        "sha256_mem": "B8AEC210C6035B9D70D54127F7261748F84D501058593A2D2533487AB2612750",
         "sha256_expected": "757218B9C3D57A1532EF6C50016136C10FF324DE1A376399C625CD963D657A66",
         "expected_fnv1a": "0x73EB30F7",
         "sections": {
-          "text": 1672,
+          "text": 1668,
           "rodata": 1452,
           "data": 0,
           "bss": 16388,
-          "total_load_image": 3124,
-          "total_memory": 19512
+          "total_load_image": 3120,
+          "total_memory": 19508
         }
       },
       "CTR": {
         "elf": "reproducibility/firmware/expG_4KiB_CTR.elf",
         "map": "reproducibility/firmware/expG_4KiB_CTR.map",
         "memory_image": "firmware/images/expG_4KiB_CTR.mem",
-        "sha256_mem": "0F8CD3B5448327AD0D79499C1FF982305A61C4997521AA602031FFE7C6FE4E36",
+        "sha256_mem": "5629BD13231E2771ED930EC3AF51CF7354B7140D664FB0E5E74EE2C9FC0F6C20",
         "sha256_expected": "241CDBD8FAA2540DBEA71B13B671FB7451122F10B0842661A387718099F49ED0",
         "expected_fnv1a": "0x97182854",
         "sections": {
-          "text": 1700,
+          "text": 1696,
           "rodata": 1452,
           "data": 0,
           "bss": 16388,
-          "total_load_image": 3152,
-          "total_memory": 19540
+          "total_load_image": 3148,
+          "total_memory": 19536
         }
       }
     }

@@ -102,7 +102,7 @@ volatile u32 exp_g_errors;
 static void copy_words(u32 *dst, const u32 *src, u32 count)
 {
     u32 i;
-    for (i = 0; i < count; ++i) dst[i] = src[i] & 0xffu;
+    for (i = 0; i < count; ++i) dst[i] = src[i];
 }
 
 /* Preserve the four NIST plaintext blocks for block indices 0..3. For longer
@@ -112,7 +112,7 @@ static u32 plaintext_byte(u32 block, u32 byte_index)
 {
     u32 seed_index = ((block & 3u) << 4) + byte_index;
     u32 group_mask = (block >> 2) & 0xffu;
-    return (plaintext_seed[seed_index] ^ group_mask) & 0xffu;
+    return plaintext_seed[seed_index] ^ group_mask;
 }
 
 static u32 xtime(u32 x)
@@ -154,7 +154,7 @@ static void add_round_key(u32 state[16], const u32 *round_key)
 static void sub_bytes(u32 state[16])
 {
     u32 i;
-    for (i = 0; i < 16u; ++i) state[i] = sbox[state[i] & 0xffu];
+    for (i = 0; i < 16u; ++i) state[i] = sbox[state[i]];
 }
 
 static void shift_rows(u32 s[16])

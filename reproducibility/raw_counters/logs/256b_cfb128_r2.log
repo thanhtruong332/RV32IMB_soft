@@ -3,8 +3,8 @@
 # SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
 # IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
 # SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-# Start of session at: Tue Oct  6 21:23:56 2026
-# Process ID         : 7912
+# Start of session at: Sat Oct 10 10:11:26 2026
+# Process ID         : 9632
 # Current directory  : F:/advance_topic/UTE-PAPER/Experiment_G/payload_scaling/runs/RV32IMB
 # Command line       : xsim.exe -log 256b_cfb128_r2.log -mode tcl -source {xsim.dir/snap_scale_rv32imb_256b_cfb128/xsim_script.tcl}
 # Log file           : F:/advance_topic/UTE-PAPER/Experiment_G/payload_scaling/runs/RV32IMB/256b_cfb128_r2.log
@@ -17,17 +17,22 @@
 # CPU Physical cores : 6
 # CPU Logical cores  : 12
 # Host memory        : 16487 MB
-# Swap memory        : 11811 MB
-# Total Virtual      : 28299 MB
-# Available Virtual  : 15455 MB
+# Swap memory        : 12348 MB
+# Total Virtual      : 28835 MB
+# Available Virtual  : 13365 MB
 #-----------------------------------------------------------
 source xsim.dir/snap_scale_rv32imb_256b_cfb128/xsim_script.tcl
 # xsim {snap_scale_rv32imb_256b_cfb128} -testplusarg REPEAT=2 -autoloadwcfg -runall
 Time resolution is 1 ps
 run -all
+============================================================
+[SOFTWARE_AES_SUMMARY] CORE=RV32IMB MODE=CFB128 PAYLOAD_BYTES=256 BLOCKS=16
+[SOFTWARE_AES_SUMMARY] MEASURE_WINDOW=START_MARKER_TO_STOP_MARKER START_CYCLE=25 STOP_CYCLE=128156
+[SOFTWARE_AES_SUMMARY] TOTAL_CYCLES=128131 CYCLES_PER_BLOCK=8008.187500 RETIRED=103417 CPI=1.238974
+============================================================
 [EXP_G] CORE=RV32IMB MODE=CFB128 REPEAT=2 PAYLOAD_BYTES=256 BLOCKS=16
-[EXP_G] START=25 STOP=128412 RAW_CYCLES=128387 CYCLES_PER_BLOCK=8024.187500
-[EXP_G] RETIRED=103673 CPI=1.238384 ALU=55843 LOAD=20184 STORE=14682 BRANCH=12614 JUMP=350 M=0 B=0
+[EXP_G] START=25 STOP=128156 RAW_CYCLES=128131 CYCLES_PER_BLOCK=8008.187500
+[EXP_G] RETIRED=103417 CPI=1.238974 ALU=55587 LOAD=20184 STORE=14682 BRANCH=12614 JUMP=350 M=0 B=0
 [EXP_G] TAKEN_BRANCH=10646 BRANCH_PENALTY_CYCLES=21292
 [EXP_G] TOTAL_STALLS=24713 CONTROL_STALLS=21992 LOAD_USE_STALLS=2721 MEMORY_STALLS=0 OTHER_STALLS=0
 [EXP_G] COUNTER_ERRORS=0 COUNTER_CHECK=PASS
@@ -49,6 +54,6 @@ run -all
 [EXP_G_BLOCK] BLOCK=14 OBSERVED=c1bab2c1296d9a5f5ac0d605618ffb26 EXPECTED=c1bab2c1296d9a5f5ac0d605618ffb26
 [EXP_G_BLOCK] BLOCK=15 OBSERVED=f517d0d8c9e9a04d437e9bb3112b53d7 EXPECTED=f517d0d8c9e9a04d437e9bb3112b53d7
 [EXP_G_BLOCK] BLOCK=16 OBSERVED=467c069a44912b8f537f3058a725f02c EXPECTED=467c069a44912b8f537f3058a725f02c
-$finish called at time : 3332737500 ps : File "F:/advance_topic/UTE-PAPER/Experiment_G/payload_scaling/generated/RV32IMB/tb_expG_scale_rv32imb_256b_cfb128.v" Line 261
+$finish called at time : 3326337500 ps : File "F:/advance_topic/UTE-PAPER/Experiment_G/payload_scaling/generated/RV32IMB/tb_expG_scale_rv32imb_256b_cfb128.v" Line 266
 exit
-INFO: [Common 17-206] Exiting xsim at Tue Oct  6 21:23:59 2026...
+INFO: [Common 17-206] Exiting xsim at Sat Oct 10 10:11:29 2026...

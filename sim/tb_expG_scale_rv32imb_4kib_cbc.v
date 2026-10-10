@@ -3,7 +3,7 @@ module tb_expG_scale_rv32imb_4kib_cbc;
     localparam [31:0] STOP_ADDR = 32'h0000ff04;
     localparam [31:0] ERRORS_ADDR = 32'h0000ff08;
     localparam [31:0] STATUS_ADDR = 32'h0000ff0c;
-    localparam integer OUTPUT_INDEX = 769;
+    localparam integer OUTPUT_INDEX = 767;
     localparam integer BLOCKS = 256;
     localparam integer PAYLOAD_BYTES = 4096;
 

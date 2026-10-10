@@ -4,7 +4,7 @@
 | --- | --- |
 | RTL origin | Custom RTL snapshot supplied by the project owner |
 | Repository | https://github.com/thanhtruong332/RV32IMB_soft |
-| Release | `v1.2.1` (use `git rev-parse v1.2.1^{commit}` for the immutable commit) |
+| Release | `v1.2.2` (use `git rev-parse v1.2.2^{commit}` for the immutable commit) |
 | License | No open-source license is declared; see `LICENSE_STATUS.md` |
 | ISA | RV32I 2.1 with integrated M operations and a B subset |
 | Pipeline | Five stages: IF, ID, EX, MEM and WB |

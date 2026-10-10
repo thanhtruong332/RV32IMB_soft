@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "repository": "https://github.com/thanhtruong332/RV32IMB_soft",
-  "release_tag": "v1.2.1",
-  "commit_resolution": "git rev-parse v1.2.1^{commit}",
+  "release_tag": "v1.2.2",
+  "commit_resolution": "git rev-parse v1.2.2^{commit}",
   "scope": "pure-software AES-128 microarchitectural profiling",
   "core": "RV32IMB",
   "rtl_origin": "custom RTL",

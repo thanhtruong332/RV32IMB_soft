@@ -1,12 +1,12 @@
 # Reproducibility evidence — RV32IMB_soft
 
-This directory is the compact reviewer-facing evidence package for release `v1.2.1`.
+This directory is the compact reviewer-facing evidence package for release `v1.2.2`.
 The Git commit is the commit referenced by the annotated release tag; resolve it with
-`git rev-parse v1.2.1^{commit}`.
+`git rev-parse v1.2.2^{commit}`.
 
 | Requested item | Location / status |
 | --- | --- |
-| RTL commit hash | Annotated tag `v1.2.1` |
+| RTL commit hash | Annotated tag `v1.2.2` |
 | Firmware hash | `firmware/build_manifest.json` and `SHA256SUMS.txt` |
 | Vivado/XSim version | `metadata.json` and the 36 raw XSim logs |
 | Tcl scripts | Project/test scripts at `../scripts/` |
