@@ -43,7 +43,7 @@ python firmware/src/build_payload_scaling.py
 
 ## Evidence package
 
-The reviewer-facing [`reproducibility/`](reproducibility/) directory records tool versions, raw evidence and SHA-256 hashes for release `v1.2.0`.
+The reviewer-facing [`reproducibility/`](reproducibility/) directory records tool versions, raw evidence and SHA-256 hashes for release `v1.2.1`.
 
 ## License
 

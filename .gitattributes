@@ -1,0 +1,3 @@
+# Check out every file byte-for-byte so reproducibility/SHA256SUMS.txt
+# matches on Windows, Linux and macOS.
+* -text
